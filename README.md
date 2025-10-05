@@ -57,6 +57,158 @@ Un reproductor de audio moderno y elegante para Windows que soporta archivos loc
 - **NAudio** - Reproducción de audio
 - **yt-dlp** - Descarga de YouTube
 
+  ## 🔧 Solución de problemas
+
+### ❌ Error: "No se encontró yt-dlp.exe"
+
+**Causa:** El programa no puede encontrar el archivo yt-dlp.exe necesario para descargar de YouTube.
+
+**Solución:**
+1. Descarga `yt-dlp.exe` desde: https://github.com/yt-dlp/yt-dlp/releases/latest
+2. Copia el archivo en la carpeta de instalación del programa (generalmente `C:\Program Files\ReproductorAudio\`)
+3. Reinicia el programa
+
+---
+
+### ❌ Error: "Response status code does not indicate success: 403 (Forbidden)"
+
+**Causa:** YouTube está bloqueando las solicitudes o yt-dlp necesita actualización.
+
+**Soluciones:**
+1. **Actualizar yt-dlp:**
+   - Descarga la última versión de yt-dlp.exe
+   - Reemplaza el archivo antiguo en la carpeta del programa
+   
+2. **Verificar la URL:**
+   - Asegúrate de que la URL sea correcta
+   - Prueba con otro video
+   - Algunos videos tienen restricciones regionales o de edad
+
+3. **Verificar conexión a internet:**
+   - Asegúrate de estar conectado a internet
+   - Prueba abrir YouTube en tu navegador
+
+---
+
+### ❌ Error: "Error al cargar el archivo"
+
+**Causa:** El archivo de audio está corrupto o en un formato no soportado.
+
+**Solución:**
+1. Verifica que el archivo sea un formato soportado: MP3, WAV, M4A, AAC, WMA, FLAC, WebM, OPUS
+2. Intenta abrir el archivo con otro reproductor para verificar que funcione
+3. Si el archivo está dañado, intenta descargarlo nuevamente
+
+---
+
+### ❌ No se escucha el audio
+
+**Causas posibles:**
+
+1. **Volumen del programa en 0:**
+   - Verifica el control de volumen en la parte inferior del reproductor
+   - Ajústalo a un nivel audible (50% o más)
+
+2. **Volumen del sistema en silencio:**
+   - Verifica el volumen de Windows en la barra de tareas
+   - Asegúrate de que no esté en mute
+
+3. **Dispositivo de audio incorrecto:**
+   - Verifica que tus altavoces/audífonos estén conectados
+   - En Windows, verifica el dispositivo de reproducción predeterminado
+
+---
+
+### ❌ El programa se congela al cargar desde YouTube
+
+**Causa:** La descarga está en progreso o hay problemas de conexión.
+
+**Solución:**
+1. **Es normal:** La primera descarga puede tardar 10-30 segundos dependiendo de tu conexión
+2. **Espera:** El mensaje "Descargando desde YouTube..." indica que está trabajando
+3. **Si tarda demasiado:**
+   - Verifica tu conexión a internet
+   - Prueba con un video más corto
+   - Reinicia el programa e intenta nuevamente
+
+---
+
+### ❌ Error: "El video no se pudo descargar"
+
+**Causas posibles:**
+
+1. **Video privado o eliminado:**
+   - El video ya no está disponible en YouTube
+   - El video es privado o tiene restricciones
+
+2. **Video con restricción de edad:**
+   - Algunos videos requieren verificación de edad
+   - yt-dlp podría no poder acceder
+
+3. **Transmisión en vivo:**
+   - Las transmisiones en vivo activas pueden causar problemas
+   - Espera a que termine y se guarde como video normal
+
+**Solución:** Prueba con otro video o URL diferente.
+
+---
+
+### ❌ El botón de descarga no aparece
+
+**Causa:** Solo aparece cuando cargas música desde YouTube, no para archivos locales.
+
+**Solución:** 
+- Carga un video desde YouTube usando el botón "🌐 YouTube"
+- El botón "⬇️ Descargar Canción" aparecerá automáticamente después de cargar
+
+---
+
+### ❌ Error: "Access denied" o problemas de permisos
+
+**Causa:** El programa no tiene permisos para escribir en ciertas carpetas.
+
+**Solución:**
+1. Ejecuta el programa como Administrador:
+   - Click derecho en el acceso directo
+   - Selecciona "Ejecutar como administrador"
+   
+2. Al guardar archivos, elige una ubicación donde tengas permisos (Documentos, Descargas, etc.)
+
+---
+
+### ❌ La barra de progreso no se mueve
+
+**Causa:** El archivo de audio podría no tener información de duración correcta.
+
+**Solución:**
+1. El audio seguirá reproduciéndose normalmente
+2. Intenta con otro archivo para verificar
+3. Algunos formatos (como ciertos WebM) pueden tener este problema
+
+---
+
+### ⚠️ Advertencia de Windows Defender o Antivirus
+
+**Causa:** Windows Defender puede marcar yt-dlp.exe como sospechoso porque descarga contenido de internet.
+
+**Solución:**
+1. Es un **falso positivo** - yt-dlp es seguro y de código abierto
+2. Agrega una excepción en Windows Defender:
+   - Windows Security → Protección contra virus y amenazas
+   - Administrar configuración → Exclusiones
+   - Agregar la carpeta del programa
+
+---
+
+### 💡 Consejos adicionales
+
+- **Mantén yt-dlp actualizado:** YouTube cambia frecuentemente, descarga la última versión de yt-dlp cuando tengas problemas
+- **Formatos recomendados para archivos locales:** MP3 y M4A tienen mejor compatibilidad
+- **URLs de YouTube:** Funciona tanto con `youtube.com/watch?v=...` como con `youtu.be/...`
+- **Calidad de descarga:** El programa descarga automáticamente la mejor calidad de audio disponible
+
+---
+
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
