@@ -24,7 +24,7 @@ Un reproductor de audio moderno y elegante para Windows que soporta archivos loc
 
 ![Interfaz principal](screenshot.png)
 
-## 🔧 Requisitos del sistema
+##🔧 Requisitos del sistema
 
 - Windows 10 o superior
 - .NET 8.0 (incluido en el instalador)
