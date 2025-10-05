@@ -1,0 +1,33 @@
+## Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+## NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+## Archivos temporales
+*.tmp
+*.temp
+*.log
+
+## NO ignorar yt-dlp.exe (importante)
+!yt-dlp.exe
+
+## Otros
+.vscode/
+*.cache
